@@ -25,7 +25,11 @@ dotenv.config();
 const app = express();
 
 // Global middlewares
-app.use(cors());
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 app.use(express.json());
 
 // Health check endpoint

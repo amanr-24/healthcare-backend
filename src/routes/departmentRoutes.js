@@ -8,7 +8,7 @@ const router = express.Router();
 router.get('/', DepartmentController.getAllDepartments);
 
 // Get overview statistics
-router.get('/stats', OverviewController.getOverviewStatistics);
+router.get('/statistics', OverviewController.getOverviewStatistics);
 
 // Get a department by ID
 router.get('/:id', DepartmentController.getDepartmentById);

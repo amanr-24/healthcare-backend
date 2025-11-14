@@ -7,6 +7,6 @@ const router = express.Router();
 router.get('/', QualityController.getQualityMetrics);
 
 // Get quality metrics for a specific department
-router.get('/department/:departmentId', QualityController.getDepartmentQualityMetrics);
+router.get('/departments/:departmentId', QualityController.getDepartmentQualityMetrics);
 
 export default router;

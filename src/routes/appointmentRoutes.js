@@ -7,10 +7,10 @@ const router = express.Router();
 router.get('/', AppointmentController.getAllAppointments);
 
 // ✅ Get appointments for a specific day (format: YYYY-MM-DD)
-router.get('/day/:date', AppointmentController.getAppointmentsForDay);
+router.get('/days/:date', AppointmentController.getAppointmentsForDay);
 
 // ✅ Get appointments for a specific patient
-router.get('/patient/:patientId/appointments', AppointmentController.getPatientAppointments);
+router.get('/patients/:patientId/appointments', AppointmentController.getPatientAppointments);
 
 // ✅ Create a new appointment
 router.post('/', AppointmentController.createAppointment);

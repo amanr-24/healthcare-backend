@@ -13,7 +13,7 @@ router.get('/count-by-role', StaffController.getStaffCountByRole);
 router.get('/count-by-department', StaffController.getStaffCountByDepartment);
 
 // Get staff by department
-router.get('/department/:departmentId', StaffController.getStaffByDepartmentId);
+router.get('/departments/:departmentId', StaffController.getStaffByDepartmentId);
 
 // Get a staff member by ID
 router.get('/:id', StaffController.getStaffById);

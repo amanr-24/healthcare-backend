@@ -10,7 +10,7 @@ router.get('/', AppointmentController.getAllAppointments);
 router.get('/day/:date', AppointmentController.getAppointmentsForDay);
 
 // ✅ Get appointments for a specific patient
-router.get('/patient/:patientId', AppointmentController.getPatientAppointments);
+router.get('/patient/:patientId/appointments', AppointmentController.getPatientAppointments);
 
 // ✅ Create a new appointment
 router.post('/', AppointmentController.createAppointment);

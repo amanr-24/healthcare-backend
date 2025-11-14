@@ -7,7 +7,7 @@ const router = express.Router();
 router.get('/', VitalsController.getAllVitalSigns);
 
 // ✅ Get vitals for one patient (current, history, alerts)
-router.get('/patient/:patientId', VitalsController.getPatientVitals);
+router.get('/patient/:patientId/vitals', VitalsController.getPatientVitals);
 
 // ✅ Record new vitals
 router.post('/record', VitalsController.recordVitals);

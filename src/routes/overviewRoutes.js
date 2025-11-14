@@ -7,15 +7,15 @@ const router = express.Router();
 router.get('/', OverviewController.getOverviewStatistics);
 
 // ✅ Get total patients
-router.get('/total_patients', OverviewController.getTotalPatients);
+router.get('/total-patients', OverviewController.getTotalPatients);
 
 // ✅ Get active patients
-router.get('/active_patients', OverviewController.getActivePatients);
+router.get('/active-patients', OverviewController.getActivePatients);
 
 // ✅ Get total appointments
-router.get('/total_appointments', OverviewController.getTotalAppointments);
+router.get('/total-appointments', OverviewController.getTotalAppointments);
 
 // ✅ Get critical cases
-router.get('/critical_cases', OverviewController.getCriticalCases);
+router.get('/critical-cases', OverviewController.getCriticalCases);
 
 export default router;

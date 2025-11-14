@@ -44,7 +44,7 @@ app.get('/api/health', (req, res) => {
 // Mount all routes
 app.use('/api/departments', departmentRoutes);
 app.use('/api/patients', patientRoutes);
-app.use('/api/staff', staffRoutes);
+app.use('/api/staffs', staffRoutes);
 app.use('/api/quality', qualityRoutes);
 app.use('/api/financial', financialRoutes);
 app.use('/api/vitals', vitalSignsRoutes);

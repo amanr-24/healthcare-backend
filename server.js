@@ -46,7 +46,7 @@ app.use('/api/departments', departmentRoutes);
 app.use('/api/patients', patientRoutes);
 app.use('/api/staff', staffRoutes);
 app.use('/api/quality', qualityRoutes);
-app.use('/api/financial', financialRoutes);
+app.use('/api/financials', financialRoutes);
 app.use('/api/vitals', vitalSignsRoutes);
 app.use('/api/appointments', appointmentRoutes);
 app.use('/api/inventory', inventoryRoutes);
